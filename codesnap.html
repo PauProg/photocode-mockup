@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone app | PauProg</title>
+    <link rel="stylesheet" href="codesnap.css">
+    <link rel="icon" href="images/icon.png">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo" onclick="submit()">
+                <i class='bx bxs-camera'></i>
+                <h1>PhotoCode</h1>
+            </div>
+            <i class='bx bx-x' id="icon" onclick="change()"></i>
+        </nav>
+        <div class="hidden-menu" id="menu">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="upload.html">Upload Code</a></li>
+                <li><a href="profile.html">My profile</a></li>
+                <li><a href="codesnap.html">CodeSnap</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <img src="images/codesnap.webp">
+                <h1>CodeSnap</h1>
+            </div>
+            <div class="info">
+                <p>CodeSnap is an extension which let's you make beautiful screenshots of your code so you can share it with anyone.</p>
+                <img src="images/code2.png">
+            </div>
+            <div class="extra">
+                <button><a href="https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap">More info</a></button>
+                <p><i class='bx bx-copyright'></i> 2024 Microsoft</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

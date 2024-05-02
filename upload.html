@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone app | PauProg</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="upload.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo" onclick="submit()">
+                <i class='bx bxs-camera'></i>
+                <h1>PhotoCode</h1>
+            </div>
+            <i class='bx bx-x' id="icon" onclick="change()"></i>
+        </nav>
+        <div class="hidden-menu" id="menu">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="upload.html">Upload Code</a></li>
+                <li><a href="profile.html">My profile</a></li>
+                <li><a href="codesnap.html">CodeSnap</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="block" id="post-creation">
+            <h1>New Post</h1>
+            <input type="file" id="inputFile">
+            <br>
+            <img id="imagen1" src="#" alt="Imagen 1" style="display: none;">
+            <input type="text" id="textoInput" placeholder="Enter the description of the photo.">
+            <button onclick="preview(); mostrarTexto();" id="preview">Submit</button>
+        </div>
+
+        <div class="preview" id="post-preview">
+            <div class="post">
+                <h2>Preview</h2>
+                <div class="user">
+                    <img src="images/user1.jpg">
+                    <p>@johnwashington12</p>
+                </div>
+                <div class="publication">
+                    <img id="imagen2" src="#" alt="Imagen 2" style="display: none;">
+                    <p id="textoMostrado" style="display: none;"></p>
+                </div>
+                <ul>
+                    <li><i class='bx bx-heart'></i></li>
+                    <li><i class='bx bxs-message-rounded-dots'></i></li>
+                    <li><i class='bx bxs-share'></i></li>
+                </ul>
+                <button onclick="upload()">Upload</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

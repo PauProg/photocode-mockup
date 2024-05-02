@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone app | PauProg</title>
+    <link rel="stylesheet" href="homepage-style.css">
+    <link rel="icon" href="images/icon.png">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo" onclick="submit()">
+                <i class='bx bxs-camera'></i>
+                <h1>PhotoCode</h1>
+            </div>
+            <i class='bx bx-x' id="icon" onclick="change()"></i>
+        </nav>
+        <div class="hidden-menu" id="menu">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="upload.html">Upload Code</a></li>
+                <li><a href="profile.html">My profile</a></li>
+                <li><a href="codesnap.html">CodeSnap</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="posts">
+        <div class="post">
+            <div class="user">
+                <img src="images/user1.jpg">
+                <p>@johnwashington12</p>
+            </div>
+            <div class="publication">
+                <img src="images/code1.png">
+                <p>Here is my code for a menu in HTML!</p>
+            </div>
+            <ul>
+                <li><i class='bx bx-heart'></i></li>
+                <li><i class='bx bxs-message-rounded-dots'></i></li>
+                <li><i class='bx bxs-share'></i></li>
+            </ul>
+        </div>
+
+        <div class="post">
+            <div class="user">
+                <img src="images/user2.jpg">
+                <p>@bolopo72</p>
+            </div>
+            <div class="publication">
+                <img src="images/code2.png">
+                <p>This is a function to change the class of an HTML element.</p>
+            </div>
+            <ul>
+                <li><i class='bx bx-heart'></i></li>
+                <li><i class='bx bxs-message-rounded-dots'></i></li>
+                <li><i class='bx bxs-share'></i></li>
+            </ul>
+        </div>
+
+        <div class="post">
+            <div class="user">
+                <img src="images/user3.jpg">
+                <p>@jannaporter_</p>
+            </div>
+            <div class="publication">
+                <img src="images/code3.png">
+                <p>Don't you know how to get information of an element from HTML? So here you have!</p>
+            </div>
+            <ul>
+                <li><i class='bx bx-heart'></i></li>
+                <li><i class='bx bxs-message-rounded-dots'></i></li>
+                <li><i class='bx bxs-share'></i></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

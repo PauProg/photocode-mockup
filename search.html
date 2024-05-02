@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone app | PauProg</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="search.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo" onclick="submit()">
+                <i class='bx bxs-camera'></i>
+                <h1>PhotoCode</h1>
+            </div>
+            <i class='bx bx-x' id="icon" onclick="change()"></i>
+        </nav>
+        <div class="hidden-menu" id="menu">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="upload.html">Upload Code</a></li>
+                <li><a href="profile.html">My profile</a></li>
+                <li><a href="codesnap.html">CodeSnap</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <form>
+                <label>
+                    <input type="text" placeholder="How to make a list?">
+                    <i class='bx bx-search-alt' id="lupita" onclick="search()"></i>
+                </label>
+            </form>
+            <div class="block" id="resultado">
+                <p class="result">1 result was found</p>
+                <div class="post">
+                    <div class="user">
+                            <img src="images/user1.jpg">
+                            <p>@jorgelopez_</p>
+                    </div>
+                    <div class="code">
+                        <img src="images/code1.png">
+                        <p>This is how I like to make lists on HTML.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="helped" id="ayuda">
+                <p>Did this helped to you?</p>
+                <div class="icons">
+                    <i class='bx bxs-dislike' id="dislike" onclick="like()"></i>
+                    <i class='bx bxs-like' id="like" onclick="like()"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

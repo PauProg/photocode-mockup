@@ -1,0 +1,151 @@
+/*HEADER*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100%;
+    background: rgb(255, 52, 52);
+    background: linear-gradient(305deg, rgba(255, 52, 52, 1) 27%, rgba(255, 171, 24, 1) 72%, rgba(249, 247, 69, 1) 100%);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fafafa;
+}
+
+header nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .logo i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+header nav .logo h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+header nav i {
+    font-size: 24px;
+}
+
+.hidden-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.hidden-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.hidden-menu ul li {
+    padding: 5px 0;
+}
+
+.hidden-menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*CONTENT*/
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background: rgba(255, 255, 255, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.content .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.content .header img {
+    width: 100px;
+    height: auto;
+}
+
+.content .info {
+    margin-bottom: 10px;
+}
+
+.content .info p {
+    font-size: .9em;
+    margin-bottom: 10px;
+}
+
+.content .info img {
+    width: 300px;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.extra button {
+    font-size: 1em;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(45, 74, 238);
+    transition: all ease .55s;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .3));
+    animation: pulse .5s linear 6;
+}
+
+.extra button:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, .6));
+}
+
+.extra button a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.extra p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 2px;
+}
